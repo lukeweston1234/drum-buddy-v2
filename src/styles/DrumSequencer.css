@@ -1,0 +1,44 @@
+.drum-sequencer {
+  margin-left: -38px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.sequencer-numbers {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+
+.number-label {
+  color: #9a9a9a;
+  font-weight: 400;
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#two {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+#three {
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+#four {
+  grid-column-start: 13;
+  grid-column-end: 14;
+}

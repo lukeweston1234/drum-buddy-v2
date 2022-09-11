@@ -1,0 +1,26 @@
+.play-button {
+  border: none;
+  background-color: #d8d8d8;
+}
+
+.play-button:active {
+  transform: translateY(2px);
+}
+
+.play-image {
+  color: #767676;
+}
+
+.reset-button {
+  border: none;
+  background-color: #d8d8d8;
+}
+
+.reset-button:active {
+  transform: translateY(2px);
+}
+
+.stop-button {
+  border: none;
+  background-color: #d8d8d8;
+}

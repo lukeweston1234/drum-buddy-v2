@@ -1,0 +1,25 @@
+.sequencer-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #bcbcbc;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.playing-sequencer-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.sequencer-button:active {
+  transform: translateY(2px);
+}
+
+.playing-sequencer-button:active {
+  transform: translateY(2px);
+}
