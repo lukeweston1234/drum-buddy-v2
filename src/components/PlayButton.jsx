@@ -13,9 +13,8 @@ const PlayButton = ({
   isPlaying,
   setIsPlaying,
   setPlayingSequencerButton,
+  bpm,
 }) => {
-  const bpm = 80;
-
   const interval = useRef(null);
 
   useEffect(() => {

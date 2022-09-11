@@ -24,3 +24,25 @@
   border: none;
   background-color: #d8d8d8;
 }
+
+.bpm-form {
+  display: flex;
+  justify-content: center;
+}
+
+.bpm-input {
+  background-color: #c0c0c0;
+  font-size: 1.5em;
+  color: #767676;
+  font-family: Orbitron;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+}
+
+.bpm-input:focus {
+  outline-width: 0;
+}
