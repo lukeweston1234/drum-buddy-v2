@@ -7,6 +7,7 @@ import { PlayButton } from "./PlayButton";
 import { ResetButton } from "./ResetButton";
 import { BPM } from "./BPM";
 import { StopButton } from "../components/StopButton";
+import { MiniScreen } from "./MiniScreen";
 
 const DrumMachine = () => {
   const [activeButton, setActiveButton] = useState("kick");
@@ -39,44 +40,48 @@ const DrumMachine = () => {
   return (
     <div className="wrapper">
       <div className="drum-machine">
-        <div className="drum-button-container">
-          <DrumButton
-            audio={kick}
-            name="kick"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
-          <DrumButton
-            audio={snare}
-            name="snare"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
-          <DrumButton
-            audio={hat}
-            name="hat"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
-          <DrumButton
-            audio={tom}
-            name="tom"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
-          <DrumButton
-            audio={stick}
-            name="stick"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
-          <DrumButton
-            audio={glitch}
-            name="glitch"
-            setActiveButton={setActiveButton}
-            activeButton={activeButton}
-          />
+        <div className="drum-machine-top">
+          <div className="drum-button-container">
+            <DrumButton
+              audio={kick}
+              name="kick"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+            <DrumButton
+              audio={snare}
+              name="snare"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+            <DrumButton
+              audio={hat}
+              name="hat"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+            <DrumButton
+              audio={tom}
+              name="tom"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+            <DrumButton
+              audio={stick}
+              name="stick"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+            <DrumButton
+              audio={glitch}
+              name="glitch"
+              setActiveButton={setActiveButton}
+              activeButton={activeButton}
+            />
+          </div>
+          <MiniScreen activeButton={activeButton} />
         </div>
+
         <div className="control-wrapper">
           <BPM bpm={bpm} setBPM={setBPM} />
           <div className="controls">

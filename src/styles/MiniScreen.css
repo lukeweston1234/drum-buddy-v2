@@ -1,0 +1,17 @@
+.mini-screen {
+  margin-left: 48px;
+  margin-bottom: 180px;
+  font-family: Orbitron;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0c0c0;
+  font-size: 1.5em;
+  color: #767676;
+  width: 200px;
+  height: 70px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+}

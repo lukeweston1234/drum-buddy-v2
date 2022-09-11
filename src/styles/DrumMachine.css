@@ -41,3 +41,11 @@
   grid-template-rows: 1 50px;
   margin-bottom: 0px;
 }
+
+.drum-machine-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
