@@ -58,7 +58,18 @@ const PlayButton = ({
     return () => {
       clearInterval(interval.current);
     };
-  }, [isPlaying, drumArray, hat, kick, glitch, stick, snare, tom, bpm]);
+  }, [
+    isPlaying,
+    setIsPlaying,
+    drumArray,
+    hat,
+    kick,
+    glitch,
+    stick,
+    snare,
+    tom,
+    bpm,
+  ]);
 
   return (
     <button
