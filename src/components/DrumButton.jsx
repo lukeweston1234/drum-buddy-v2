@@ -1,5 +1,4 @@
 import React from "react";
-import { useAudio } from "./useAudio";
 import "../styles/DrumButton.css";
 
 const DrumButton = ({ audio, name, activeButton, setActiveButton }) => {

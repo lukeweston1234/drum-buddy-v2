@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/Controls.css";
 
 const PlayButton = ({
@@ -72,6 +72,7 @@ const PlayButton = ({
       <img
         className="play-image"
         src={isPlaying ? "/pause.svg" : "/play.svg"}
+        alt="play/pause button"
       />
     </button>
   );

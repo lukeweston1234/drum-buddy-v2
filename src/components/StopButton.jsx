@@ -9,7 +9,7 @@ const StopButton = ({ setIsPlaying, drumIndex, setPlayingSequencerButton }) => {
   };
   return (
     <button className="stop-button" onClick={stopHandler}>
-      <img src="/stop.svg" />
+      <img alt="play/pause button" src="/stop.svg" />
     </button>
   );
 };

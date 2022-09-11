@@ -16,7 +16,7 @@ const ResetButton = ({ setDrumArray }) => {
   };
   return (
     <button onClick={resetHandler} className="reset-button">
-      <img src="/reset.svg" />
+      <img alt="play/pause button" src="/reset.svg" />
     </button>
   );
 };

@@ -12,12 +12,12 @@ const DrumMachine = () => {
   const [playingSequencerButton, setPlayingSequencerButton] = useState(0);
   const drumIndex = useRef(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [kick, setKick] = useAudio("kick.mp3");
-  const [snare, setSnare] = useAudio("snare.mp3");
-  const [hat, setHat] = useAudio("hat.mp3");
-  const [tom, setTom] = useAudio("tom.mp3");
-  const [stick, setStick] = useAudio("stick.mp3");
-  const [glitch, setGlitch] = useAudio("glitch.mp3");
+  const [kick] = useAudio("kick.mp3");
+  const [snare] = useAudio("snare.mp3");
+  const [hat] = useAudio("hat.mp3");
+  const [tom] = useAudio("tom.mp3");
+  const [stick] = useAudio("stick.mp3");
+  const [glitch] = useAudio("glitch.mp3");
   const [drumArray, setDrumArray] = useState(() => {
     const soundPlayer = {
       kick: false,

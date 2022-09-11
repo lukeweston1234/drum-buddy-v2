@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SequencerButton } from "./SequencerButton";
 import "../styles/DrumSequencer.css";
 
