@@ -58,9 +58,10 @@ const PlayButton = ({
     return () => {
       clearInterval(interval.current);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     isPlaying,
-    setIsPlaying,
+    setPlayingSequencerButton,
     drumArray,
     hat,
     kick,
