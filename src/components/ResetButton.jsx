@@ -7,6 +7,8 @@ const ResetButton = ({ setDrumArray }) => {
       snare: false,
       hat: false,
       tom: false,
+      stick: false,
+      glitch: false,
     };
     const dataArray = [];
     for (let i = 0; i < 16; i++) {
