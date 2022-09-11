@@ -11,9 +11,10 @@
   height: 20px;
   width: 20px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #f18928;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  transform: scale(120%);
 }
 
 .sequencer-button:active {
