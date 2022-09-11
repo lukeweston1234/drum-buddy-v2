@@ -17,10 +17,16 @@
   transform: scale(120%);
 }
 
-.sequencer-button:active {
+.sequencer-button:hover:active {
   transform: translateY(2px);
 }
 
-.playing-sequencer-button:active {
+.playing-sequencer-button:hover:active {
   transform: translateY(2px);
+}
+
+.sequencer-button:hover,
+.playing-sequencer-button:hover {
+  background-color: #767676;
+  transform: scale(120%);
 }
