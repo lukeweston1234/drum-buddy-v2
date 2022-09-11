@@ -57,9 +57,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Navigate replace to={"/Home"} />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Explore" element={<Explore />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
