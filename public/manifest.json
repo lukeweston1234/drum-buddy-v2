@@ -1,0 +1,8 @@
+{
+  "short_name": "Drumbuddy",
+  "name": "Drumbuddy",
+  "icons": {
+    "src": "/Db.png"
+  },
+  "start_url": "/Home"
+}

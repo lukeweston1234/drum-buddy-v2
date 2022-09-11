@@ -9,7 +9,7 @@ import { BPM } from "./BPM";
 import { StopButton } from "../components/StopButton";
 
 const DrumMachine = () => {
-  const [activeButton, setActiveButton] = useState();
+  const [activeButton, setActiveButton] = useState("kick");
   const [bpm, setBPM] = useState(120);
   const [playingSequencerButton, setPlayingSequencerButton] = useState(0);
   const drumIndex = useRef(0);
