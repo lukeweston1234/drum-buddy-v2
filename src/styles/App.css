@@ -78,6 +78,9 @@ a {
 }
 
 @media (min-width: 1280px) {
+  * {
+    overflow: hidden;
+  }
   .logo {
     font-size: 84px;
     font-weight: 700;
