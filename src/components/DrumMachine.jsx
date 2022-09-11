@@ -8,6 +8,7 @@ import { ResetButton } from "./ResetButton";
 import { BPM } from "./BPM";
 import { StopButton } from "../components/StopButton";
 import { MiniScreen } from "./MiniScreen";
+import { SaveButton } from "./SaveButton";
 
 const DrumMachine = () => {
   const [activeButton, setActiveButton] = useState("kick");
@@ -105,6 +106,7 @@ const DrumMachine = () => {
               setPlayingSequencerButton={setPlayingSequencerButton}
             />
             <ResetButton setDrumArray={setDrumArray} />
+            <SaveButton />
           </div>
         </div>
         <DrumSequencer

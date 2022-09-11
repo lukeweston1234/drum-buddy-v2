@@ -76,24 +76,3 @@ a {
     margin-left: 0px;
   }
 }
-
-@media (min-width: 1280px) {
-  * {
-    overflow: hidden;
-  }
-  .logo {
-    font-size: 84px;
-    font-weight: 700;
-    font-style: bold;
-    color: #363636;
-  }
-  .active-nav-text {
-    color: #f18928;
-    font-size: 36px;
-  }
-
-  .nav-text {
-    color: #767676;
-    font-size: 36px;
-  }
-}

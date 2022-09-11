@@ -3,8 +3,10 @@ button:active * {
 }
 
 .play-button {
+  scale: 80%;
   border: none;
   background-color: #d8d8d8;
+  padding: 0px;
 }
 
 .play-button:active {
@@ -16,11 +18,20 @@ button:active * {
 }
 
 .reset-button {
+  scale: 80%;
+  border: none;
+  background-color: #d8d8d8;
+}
+
+.save-button {
+  scale: 70%;
+
   border: none;
   background-color: #d8d8d8;
 }
 
 .stop-button {
+  scale: 80%;
   border: none;
   background-color: #d8d8d8;
 }
