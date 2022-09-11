@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/SequencerButton.css";
 
 const SequencerButton = ({
@@ -8,6 +8,20 @@ const SequencerButton = ({
   activeButton,
   playingSequencerButton,
 }) => {
+  const [buttonClass, setButtonClass] = useState("sequencer-button");
+  useEffect(() => {
+    const cssHandler = () => {
+      if (playingSequencerButton === index) {
+        setButtonClass("playing-sequencer-button");
+      } else if (drumArray[index][activeButton]) {
+        setButtonClass("seleceted-sequencer-button");
+      } else {
+        setButtonClass("sequencer-button");
+      }
+    };
+    cssHandler();
+  }, [index, drumArray, activeButton, playingSequencerButton]);
+
   const handleClick = (e) => {
     e.preventDefault();
     const tempArray = structuredClone(drumArray);
@@ -17,16 +31,7 @@ const SequencerButton = ({
     setDrumArray(tempArray);
     console.log(tempArray);
   };
-  return (
-    <button
-      onClick={handleClick}
-      className={
-        playingSequencerButton === index
-          ? "playing-sequencer-button "
-          : "sequencer-button"
-      }
-    ></button>
-  );
+  return <button onClick={handleClick} className={buttonClass}></button>;
 };
 
 export { SequencerButton };
