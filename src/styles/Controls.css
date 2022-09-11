@@ -1,3 +1,7 @@
+button:active * {
+  transform: translateY(2px);
+}
+
 .play-button {
   border: none;
   background-color: #d8d8d8;
@@ -14,10 +18,6 @@
 .reset-button {
   border: none;
   background-color: #d8d8d8;
-}
-
-.reset-button:active {
-  transform: translateY(2px);
 }
 
 .stop-button {
@@ -45,4 +45,16 @@
 
 .bpm-input:focus {
   outline-width: 0;
+}
+
+@media (max-height: 900px) {
+  .bpm-input {
+    width: 60px;
+    height: 20px;
+    align-self: center;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }

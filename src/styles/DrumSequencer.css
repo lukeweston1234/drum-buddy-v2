@@ -20,6 +20,7 @@
   align-self: center;
   text-align: center;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -41,4 +42,16 @@
 #four {
   grid-column-start: 13;
   grid-column-end: 14;
+}
+
+@media (max-width: 900px) {
+  .drum-sequencer {
+    margin-bottom: 0px;
+  }
+  .sequencer-numbers {
+    margin-bottom: 4px;
+  }
+  .number-label {
+    margin-bottom: 5px;
+  }
 }

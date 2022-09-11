@@ -16,3 +16,11 @@
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
+
+@media (max-height: 900px) {
+  .mini-screen {
+    width: 140px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+}

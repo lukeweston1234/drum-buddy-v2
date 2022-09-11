@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Source+Sans+Pro:wght@200;300;600;700&display=swap");
+
 * {
   font-family: Source Sans Pro;
 }
 
 .nav-bar {
+  padding-left: 0;
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
+  margin-left: 0px;
 }
 
 a {
@@ -43,7 +45,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav-divider {
@@ -55,5 +57,40 @@ a {
 }
 
 .nav-wrapper {
-  margin-left: 60px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 920px) {
+  .logo {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
+    color: #363636;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    font-size: 84px;
+    font-weight: 700;
+    font-style: bold;
+    color: #363636;
+  }
+  .active-nav-text {
+    color: #f18928;
+    font-size: 36px;
+  }
+
+  .nav-text {
+    color: #767676;
+    font-size: 36px;
+  }
 }
