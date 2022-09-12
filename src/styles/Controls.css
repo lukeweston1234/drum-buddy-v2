@@ -58,7 +58,7 @@ button:active * {
   outline-width: 0;
 }
 
-@media (max-height: 900px) {
+@media (max-height: 700px) {
   .bpm-input {
     width: 60px;
     height: 20px;

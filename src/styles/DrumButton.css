@@ -23,7 +23,7 @@
   transform: translateY(2px);
 }
 
-@media (max-height: 900px) {
+@media (max-height: 700px) {
   .drum-button,
   .active-drum-button {
     width: 50px;

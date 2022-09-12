@@ -52,7 +52,7 @@
   justify-content: flex-start;
 }
 
-@media (max-height: 900px) {
+@media (max-height: 700px) {
   .wrapper {
     margin-right: 0;
     margin-top: 0px;

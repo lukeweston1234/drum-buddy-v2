@@ -4,6 +4,10 @@
   font-family: Source Sans Pro;
 }
 
+body {
+  overflow: hidden;
+}
+
 .nav-bar {
   padding-left: 0;
   display: flex;
