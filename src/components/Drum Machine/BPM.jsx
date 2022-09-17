@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Controls.css";
+import "../../styles/Controls.css";
 
 const BPM = ({ bpm, setBPM }) => {
   const clickHandler = (e) => {

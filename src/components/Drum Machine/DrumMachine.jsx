@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
 import { useAudio } from "./useAudio";
-import "../styles/DrumMachine.css";
+import "../../styles/DrumMachine.css";
 import { DrumButton } from "./DrumButton";
 import { DrumSequencer } from "./DrumSequencer";
 import { PlayButton } from "./PlayButton";
 import { ResetButton } from "./ResetButton";
 import { BPM } from "./BPM";
-import { StopButton } from "../components/StopButton";
+import { StopButton } from "./StopButton";
 import { MiniScreen } from "./MiniScreen";
 import { SaveButton } from "./SaveButton";
 

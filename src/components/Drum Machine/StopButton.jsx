@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Controls.css";
+import "../../styles/Controls.css";
 
 const StopButton = ({ setIsPlaying, drumIndex, setPlayingSequencerButton }) => {
   const stopHandler = () => {

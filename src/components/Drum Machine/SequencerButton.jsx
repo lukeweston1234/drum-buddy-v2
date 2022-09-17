@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/SequencerButton.css";
+import "../../styles/SequencerButton.css";
 
 const SequencerButton = ({
   index,

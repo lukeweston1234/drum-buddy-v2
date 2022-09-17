@@ -1,8 +1,7 @@
 import React from "react";
-//import { useQuery } from "react-query";
-import "../styles/Controls.css";
+import "../../styles/Controls.css";
 
-const SaveButton = () => {
+const SaveButton = ({ drumArray }) => {
   return (
     <button className="save-button">
       <img alt="Save Button" src="/save.svg" />
