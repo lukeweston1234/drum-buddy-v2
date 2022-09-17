@@ -32,7 +32,7 @@ const Login = () => {
             handleToken(credentialResponse);
           }}
           onError={() => {
-            console.log("Login Failed");
+            setLoginFailed(true);
           }}
           useOneTap
         />
