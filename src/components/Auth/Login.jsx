@@ -8,18 +8,22 @@ const Login = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
   const [loginFailed, setLoginFailed] = useState(false);
   const handleToken = (credentialResponse) => {
-    console.log("In on success");
-    console.log(`https://${process.env.REACT_APP_API_URL}`);
-    const URL = `https://${process.env.REACT_APP_API_URL + "/api/login"}`;
-    console.log(URL);
-    console.log(credentialResponse);
-    const results = axios.post(URL, credentialResponse);
-    console.log(results);
-    if (results.status === 200 || results.status === 409) {
+    try {
+      console.log("In on success");
+      console.log(`https://${process.env.REACT_APP_API_URL}`);
+      const URL = `https://${process.env.REACT_APP_API_URL + "/api/login"}`;
+      console.log(URL);
+      console.log(credentialResponse);
+      const results = axios.post(URL, credentialResponse);
+      console.log(results);
       localStorage.setItem("userToken", credentialResponse.credential);
       setIsAuth(true);
-    } else {
-      setLoginFailed(true);
+    } catch (error) {
+      if (error.response.status == "409") {
+        setIsAuth(true);
+      } else {
+        setLoginFailed(true);
+      }
     }
   };
   if (isAuth) {
