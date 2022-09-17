@@ -34,6 +34,7 @@ const Login = () => {
             handleToken(credentialResponse);
           }}
           onError={() => {
+            console.log("Login Error");
             setLoginFailed(true);
           }}
           useOneTap
