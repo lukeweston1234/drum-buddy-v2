@@ -19,7 +19,7 @@ const Login = () => {
       localStorage.setItem("userToken", credentialResponse.credential);
       setIsAuth(true);
     } catch (error) {
-      if (error.response.status == "409") {
+      if (error.response.status === "409") {
         localStorage.setItem("userToken", credentialResponse.credential);
         setIsAuth(true);
       } else {
