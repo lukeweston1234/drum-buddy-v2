@@ -8,11 +8,10 @@ const Login = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
   const [loginFailed, setLoginFailed] = useState(false);
   const handleToken = (credentialResponse) => {
+    const URL = `${process.env.REACT_APP_API_URL + "/api/login"}`;
+    console.log(URL);
     console.log(credentialResponse);
-    const results = axios.post(
-      `${process.env.REACT_APP_API_URL + "/api/login"}`,
-      credentialResponse
-    );
+    const results = axios.post(URL, credentialResponse);
     console.log(results);
     if (results.status === 200 || results.status === 409) {
       localStorage.setItem("userToken", credentialResponse.credential);
