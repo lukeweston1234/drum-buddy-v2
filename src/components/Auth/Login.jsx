@@ -9,8 +9,8 @@ const Login = () => {
   const [loginFailed, setLoginFailed] = useState(false);
   const handleToken = (credentialResponse) => {
     console.log("In on success");
-    console.log(`${process.env.REACT_APP_API_URL}`);
-    const URL = `${process.env.REACT_APP_API_URL + "/api/login"}`;
+    console.log(`/${process.env.REACT_APP_API_URL}`);
+    const URL = `/${process.env.REACT_APP_API_URL + "/api/login"}`;
     console.log(URL);
     console.log(credentialResponse);
     const results = axios.post(URL, credentialResponse);
