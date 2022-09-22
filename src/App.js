@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link, Route, Routes, useLocation, Navigate } from "react-router-dom";
-import { Explore } from "./components/Explore";
 import { Home } from "./components/Home";
 import { Profile } from "./components/Profile";
 import { Login } from "./components/Auth/Login";
 import { Logout } from "./components/Auth/Logout";
+import { Sequence } from "./components/Sequence";
 import { AuthContext } from "./contexts/AuthContext";
 import "./styles/App.css";
 
@@ -30,18 +30,7 @@ function App() {
                   Home
                 </Link>
               </li>
-              <li className="nav-element">
-                <Link
-                  className={
-                    location.pathname === "/Explore"
-                      ? "active-nav-text"
-                      : "nav-text"
-                  }
-                  to="/Explore"
-                >
-                  Explore
-                </Link>
-              </li>
+
               {isAuth && (
                 <li className="nav-element">
                   <Link
@@ -91,8 +80,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Navigate replace to={"/Home"} />} />
+        <Route path="/sequence" element={<Navigate replace to={"/Home"} />} />
+        <Route path="/sequence/:sequenceId" element={<Sequence />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
