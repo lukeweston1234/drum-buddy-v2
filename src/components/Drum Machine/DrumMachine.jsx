@@ -10,7 +10,7 @@ import { StopButton } from "./StopButton";
 import { MiniScreen } from "./MiniScreen";
 import { SaveButton } from "./SaveButton";
 
-const DrumMachine = () => {
+const DrumMachine = ({ parentDrumArray }) => {
   const [activeButton, setActiveButton] = useState("kick");
   const [bpm, setBPM] = useState(120);
   const [playingSequencerButton, setPlayingSequencerButton] = useState(0);
@@ -23,6 +23,10 @@ const DrumMachine = () => {
   const [stick] = useAudio("stick.mp3");
   const [glitch] = useAudio("glitch.mp3");
   const [drumArray, setDrumArray] = useState(() => {
+    console.log(parentDrumArray);
+    if (parentDrumArray) {
+      return parentDrumArray;
+    }
     const soundPlayer = {
       kick: false,
       snare: false,
@@ -106,7 +110,7 @@ const DrumMachine = () => {
               setPlayingSequencerButton={setPlayingSequencerButton}
             />
             <ResetButton setDrumArray={setDrumArray} />
-            <SaveButton />
+            <SaveButton drumArray={drumArray} />
           </div>
         </div>
         <DrumSequencer
