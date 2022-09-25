@@ -1,5 +1,5 @@
-import React from "react";
 import "../../styles/MiniScreen.css";
+import React from "react";
 
 const MiniScreen = ({ activeButton }) => {
   return (

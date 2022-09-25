@@ -1,6 +1,7 @@
+import "../../styles/DrumMachine.css";
 import React, { useState, useRef } from "react";
 import { useAudio } from "./useAudio";
-import "../../styles/DrumMachine.css";
+
 import { DrumButton } from "./DrumButton";
 import { DrumSequencer } from "./DrumSequencer";
 import { PlayButton } from "./PlayButton";

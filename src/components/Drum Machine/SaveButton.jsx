@@ -1,8 +1,8 @@
+import "../../styles/Controls.css";
 import React, { useState, useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
-import "../../styles/Controls.css";
 
 const SaveButton = ({ drumArray }) => {
   const { isAuth } = useContext(AuthContext);

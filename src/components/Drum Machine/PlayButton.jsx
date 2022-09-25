@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
 import "../../styles/Controls.css";
+import React, { useEffect, useRef } from "react";
 
 const PlayButton = ({
   kick,

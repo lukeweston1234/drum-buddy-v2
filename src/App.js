@@ -1,3 +1,4 @@
+import "./styles/App.css";
 import React, { useContext } from "react";
 import { Link, Route, Routes, useLocation, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -7,7 +8,6 @@ import { Login } from "./components/Auth/Login";
 import { Logout } from "./components/Auth/Logout";
 import { Sequence } from "./components/Sequence";
 import { AuthContext } from "./contexts/AuthContext";
-import "./styles/App.css";
 
 function App() {
   const { isAuth } = useContext(AuthContext);
