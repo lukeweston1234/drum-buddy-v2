@@ -1,33 +1,25 @@
 .drum-button {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
   background-color: #767676;
   border: none;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  box-shadow: -1px 4px 4px 0px #00000040;
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
 }
 
 .active-drum-button {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
   background-color: #444444;
   border: none;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  box-shadow: -1px 4px 4px 0px #00000040;
+
+  width: 90%;
+  height: 90%;
 }
 
 .active-drum-button:active,
 .drum-button:active {
   transform: translateY(2px);
-}
-
-@media (max-height: 700px) {
-  .drum-button,
-  .active-drum-button {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-  }
 }

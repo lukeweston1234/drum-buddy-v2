@@ -9,7 +9,7 @@ const DrumSequencer = ({
   playingSequencerButton,
 }) => {
   return (
-    <div>
+    <>
       <ul className="drum-sequencer">
         {drumArray.map((item, index) => {
           return (
@@ -43,7 +43,7 @@ const DrumSequencer = ({
           4
         </h3>
       </div>
-    </div>
+    </>
   );
 };
 

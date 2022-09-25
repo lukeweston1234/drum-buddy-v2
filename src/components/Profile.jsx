@@ -21,10 +21,15 @@ const Profile = () => {
   return (
     <div className="profile-wrapper">
       {console.log(data)}
-      <h3>Drum Sequences</h3>
+      <h3>My Loops</h3>
+      <hr />
       <ul className="sequence-container">
         {data.data.map((sequence, index) => {
-          return <SequenceItem sequence={sequence} key={index} />;
+          return (
+            <>
+              <SequenceItem sequence={sequence} key={index} /> <hr />
+            </>
+          );
         })}
       </ul>
     </div>

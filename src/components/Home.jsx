@@ -1,10 +1,6 @@
 import React from "react";
 import { DrumMachine } from "./Drum Machine/DrumMachine";
 const Home = () => {
-  return (
-    <div>
-      <DrumMachine />
-    </div>
-  );
+  return <DrumMachine />;
 };
 export { Home };

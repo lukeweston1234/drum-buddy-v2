@@ -18,7 +18,6 @@ const PlayButton = ({
   const interval = useRef(null);
 
   useEffect(() => {
-    console.log(drumArray);
     const playSound = () => {
       if (drumArray[drumIndex.current].kick) {
         kick.play();
@@ -41,7 +40,6 @@ const PlayButton = ({
     };
     if (isPlaying) {
       interval.current = setInterval(() => {
-        console.log("Drum Index", drumIndex.current);
         setPlayingSequencerButton(drumIndex.current);
         playSound();
         if (drumIndex.current === drumArray.length - 1) {

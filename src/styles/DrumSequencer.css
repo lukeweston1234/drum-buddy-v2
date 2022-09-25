@@ -1,17 +1,24 @@
 .drum-sequencer {
-  margin-left: -38px;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .sequencer-numbers {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 5px;
+  align-self: flex-end;
+  margin-bottom: 0px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .number-label {
@@ -42,16 +49,4 @@
 #four {
   grid-column-start: 13;
   grid-column-end: 14;
-}
-
-@media (max-height: 700px) {
-  .drum-sequencer {
-    margin-bottom: 0px;
-  }
-  .sequencer-numbers {
-    margin-bottom: 4px;
-  }
-  .number-label {
-    margin-bottom: 5px;
-  }
 }

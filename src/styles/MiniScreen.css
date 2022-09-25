@@ -1,6 +1,8 @@
 .mini-screen {
-  margin-left: 48px;
-  margin-bottom: 180px;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
   font-family: Orbitron;
   display: flex;
   justify-content: center;
@@ -8,19 +10,12 @@
   background-color: #c0c0c0;
   font-size: 1.5em;
   color: #767676;
-  width: 200px;
-  height: 70px;
   border: none;
   text-align: center;
   vertical-align: middle;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-}
-
-@media (max-height: 900px) {
-  .mini-screen {
-    width: 140px;
-    height: 60px;
-    margin-bottom: 30px;
-  }
+  height: 80%;
+  align-items: center;
+  align-self: center;
 }

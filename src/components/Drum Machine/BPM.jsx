@@ -10,9 +10,7 @@ const BPM = ({ bpm, setBPM }) => {
     }
   };
   return (
-    <form className="bpm-form">
-      <input className="bpm-input" onChange={clickHandler} value={bpm}></input>
-    </form>
+    <input className="bpm-input" onChange={clickHandler} value={bpm}></input>
   );
 };
 

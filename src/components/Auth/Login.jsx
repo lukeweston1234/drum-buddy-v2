@@ -30,9 +30,10 @@ const Login = () => {
   }
   if (loginFailed) {
     return (
-      <div>
+      <div className="google-login">
         <h3>Login Failed</h3>
         <GoogleLogin
+          className="google-login"
           onSuccess={(credentialResponse) => {
             handleToken(credentialResponse);
           }}
@@ -40,21 +41,29 @@ const Login = () => {
             console.log("Login Error");
             setLoginFailed(true);
           }}
-          useOneTap
+          shape={"rectangular"}
+          size={"large"}
+          theme={"outlined"}
+          width={"300"}
+          useOneTap={false}
         />
       </div>
     );
   }
   return (
-    <GoogleLogin
-      onSuccess={(credentialResponse) => {
-        handleToken(credentialResponse);
-      }}
-      onError={() => {
-        console.log("Login Failed");
-      }}
-      useOneTap
-    />
+    <div className="google-login">
+      <GoogleLogin
+        onSuccess={(credentialResponse) => {
+          handleToken(credentialResponse);
+        }}
+        onError={() => {
+          console.log("Login Failed");
+        }}
+        shape={"rectangular"}
+        size={"large"}
+        theme={"outlined"}
+      />
+    </div>
   );
 };
 

@@ -45,75 +45,71 @@ const DrumMachine = ({ parentDrumArray }) => {
   return (
     <div className="wrapper">
       <div className="drum-machine">
-        <div className="drum-machine-top">
-          <div className="drum-button-container">
-            <DrumButton
-              audio={kick}
-              name="kick"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-            <DrumButton
-              audio={snare}
-              name="snare"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-            <DrumButton
-              audio={hat}
-              name="hat"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-            <DrumButton
-              audio={tom}
-              name="tom"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-            <DrumButton
-              audio={stick}
-              name="stick"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-            <DrumButton
-              audio={glitch}
-              name="glitch"
-              setActiveButton={setActiveButton}
-              activeButton={activeButton}
-            />
-          </div>
-          <MiniScreen activeButton={activeButton} />
+        <div className="drum-button-container">
+          <DrumButton
+            audio={kick}
+            name="kick"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
+          <DrumButton
+            audio={snare}
+            name="snare"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
+          <DrumButton
+            audio={hat}
+            name="hat"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
+          <DrumButton
+            audio={tom}
+            name="tom"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
+          <DrumButton
+            audio={stick}
+            name="stick"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
+          <DrumButton
+            audio={glitch}
+            name="glitch"
+            setActiveButton={setActiveButton}
+            activeButton={activeButton}
+          />
         </div>
-
+        <MiniScreen className="mini-screen" activeButton={activeButton} />
+        <BPM bpm={bpm} setBPM={setBPM} />
         <div className="control-wrapper">
-          <BPM bpm={bpm} setBPM={setBPM} />
-          <div className="controls">
-            <PlayButton
-              kick={kick}
-              snare={snare}
-              hat={hat}
-              tom={tom}
-              stick={stick}
-              glitch={glitch}
-              drumArray={drumArray}
-              setPlayingSequencerButton={setPlayingSequencerButton}
-              isPlaying={isPlaying}
-              setIsPlaying={setIsPlaying}
-              drumIndex={drumIndex}
-              bpm={bpm}
-            />
-            <StopButton
-              drumIndex={drumIndex}
-              setIsPlaying={setIsPlaying}
-              setPlayingSequencerButton={setPlayingSequencerButton}
-            />
-            <ResetButton setDrumArray={setDrumArray} />
-            <SaveButton drumArray={drumArray} />
-          </div>
+          <PlayButton
+            kick={kick}
+            snare={snare}
+            hat={hat}
+            tom={tom}
+            stick={stick}
+            glitch={glitch}
+            drumArray={drumArray}
+            setPlayingSequencerButton={setPlayingSequencerButton}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+            drumIndex={drumIndex}
+            bpm={bpm}
+          />
+          <StopButton
+            drumIndex={drumIndex}
+            setIsPlaying={setIsPlaying}
+            setPlayingSequencerButton={setPlayingSequencerButton}
+          />
+          <ResetButton setDrumArray={setDrumArray} />
+          <SaveButton drumArray={drumArray} />
         </div>
         <DrumSequencer
+          className="drum-sequencer"
           activeButton={activeButton}
           drumArray={drumArray}
           setDrumArray={setDrumArray}

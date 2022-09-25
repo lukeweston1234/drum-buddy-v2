@@ -20,77 +20,63 @@ function App() {
         <div className="header">
           <h1 className="logo">Drumbuddy</h1>
           <nav className="nav-wrapper">
-            <ul className="nav-bar">
-              <li className={"nav-element"}>
-                <Link
-                  className={
-                    location.pathname === "/Home"
-                      ? "active-nav-text"
-                      : "nav-text"
-                  }
-                  to="/Home"
-                >
-                  Home
-                </Link>
-              </li>
+            <Link
+              className={
+                location.pathname === "/Home" ? "active-nav-text" : "nav-text"
+              }
+              to="/Home"
+            >
+              Home
+            </Link>
 
-              {isAuth && (
-                <li className="nav-element">
-                  <Link
-                    className={
-                      location.pathname === "/Profile"
-                        ? "active-nav-text"
-                        : "nav-text"
-                    }
-                    to="/Profile"
-                  >
-                    Profile
-                  </Link>
-                </li>
-              )}
-              {!isAuth && (
-                <li className="nav-element">
-                  <Link
-                    className={
-                      location.pathname === "/Login"
-                        ? "active-nav-text"
-                        : "nav-text"
-                    }
-                    to="/Login"
-                  >
-                    Login
-                  </Link>
-                </li>
-              )}
-              {isAuth && (
-                <li className="nav-element">
-                  <Link
-                    className={
-                      location.pathname === "/Logout"
-                        ? "active-nav-text"
-                        : "nav-text"
-                    }
-                    to="/Logout"
-                  >
-                    Logout
-                  </Link>
-                </li>
-              )}
-            </ul>
+            {isAuth && (
+              <Link
+                className={
+                  location.pathname === "/Profile"
+                    ? "active-nav-text"
+                    : "nav-text"
+                }
+                to="/Profile"
+              >
+                Profile
+              </Link>
+            )}
+            {!isAuth && (
+              <Link
+                className={
+                  location.pathname === "/Login"
+                    ? "active-nav-text"
+                    : "nav-text"
+                }
+                to="/Login"
+              >
+                Login
+              </Link>
+            )}
+            {isAuth && (
+              <Link
+                className={
+                  location.pathname === "/Logout"
+                    ? "active-nav-text"
+                    : "nav-text"
+                }
+                to="/Logout"
+              >
+                Logout
+              </Link>
+            )}
           </nav>
         </div>
-        <hr className="nav-divider"></hr>
+        <Routes>
+          <Route path="/" element={<Navigate replace to={"/Home"} />} />
+          <Route path="/sequence" element={<Navigate replace to={"/Home"} />} />
+          <Route path="/sequence/:sequenceId" element={<Sequence />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
+        </Routes>
       </div>
-
-      <Routes>
-        <Route path="/" element={<Navigate replace to={"/Home"} />} />
-        <Route path="/sequence" element={<Navigate replace to={"/Home"} />} />
-        <Route path="/sequence/:sequenceId" element={<Sequence />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />
-      </Routes>
     </QueryClientProvider>
   );
 }
