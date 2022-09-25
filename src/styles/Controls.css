@@ -1,3 +1,8 @@
+img {
+  width: 3vw;
+  height: 3vw;
+}
+
 button:active * {
   transform: translateY(2px);
 }

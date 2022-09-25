@@ -1,6 +1,7 @@
 .drum-sequencer {
   margin: 0px;
   padding: 0px;
+  padding-bottom: 2vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,8 +28,15 @@
   align-self: center;
   text-align: center;
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
+  font-size: 2vh;
+}
+
+#one,
+#two,
+#three,
+#four {
+  padding-bottom: 1.5vh;
 }
 
 #one {

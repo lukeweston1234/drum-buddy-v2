@@ -1,7 +1,7 @@
 .drum-button {
   background-color: #767676;
   border: none;
-  border-radius: 15px;
+  border-radius: 1vw;
   box-shadow: -1px 4px 4px 0px #00000040;
   width: 90%;
   height: 90%;
@@ -12,7 +12,7 @@
 .active-drum-button {
   background-color: #444444;
   border: none;
-  border-radius: 15px;
+  border-radius: 1vw;
   box-shadow: -1px 4px 4px 0px #00000040;
   width: 90%;
   height: 90%;

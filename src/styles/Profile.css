@@ -2,7 +2,7 @@ h3 {
   display: block;
   width: 100%;
   font-weight: 600;
-  margin-left: 4vw;
+  margin-left: 8vw;
   margin-top: 2vh;
   font-size: calc(16px + 1vw);
 }
@@ -24,7 +24,7 @@ h3 {
   width: 100%;
   margin-left: 4vw;
   margin-right: 4vw;
-  padding-left: 0;
+  padding-left: 0px;
   margin-top: 0px;
   display: flex;
   flex-direction: column;
