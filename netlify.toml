@@ -5,7 +5,7 @@
       X-Frame-Options = "DENY"
       X-XSS-Protection = "1; mode=block"
       X-Content-Type-Options= "nosniff"
-      Content-Security-Policy = "default-src 'self'; connect-src 'self' https://drum-buddy-backend-production.up.railway.app/ https://accounts.google.com/gsi/ ;font-src https://fonts.googleapis.com https://fonts.gstatic.com ; img-src 'self'; object-src 'none'; script-src 'self' https://accounts.google.com/gsi/client ; style-src 'self' https://accounts.google.com https://fonts.googleapis.com; frame-ancestors 'none'; frame-src 'self' https://accounts.google.com "
+      Content-Security-Policy = "default-src 'self'; connect-src 'self' https://drumbuddy.up.railway.app https://accounts.google.com/gsi/ ;font-src https://fonts.googleapis.com https://fonts.gstatic.com ; img-src 'self'; object-src 'none'; script-src 'self' https://accounts.google.com/gsi/client ; style-src 'self' https://accounts.google.com https://fonts.googleapis.com; frame-ancestors 'none'; frame-src 'self' https://accounts.google.com "
       
 
 [[redirects]]
