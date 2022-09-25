@@ -28,7 +28,7 @@ h3 {
   margin-top: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-content: center;
   overflow-y: scroll;
   overflow-x: hidden;
