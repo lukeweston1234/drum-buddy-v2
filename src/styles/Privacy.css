@@ -2,10 +2,10 @@
   grid-column-start: 3;
   grid-column-end: 8;
   grid-row-start: 3;
-  font-size: 2vw;
+  grid-row-end: 7;
+  font-size: calc(10px + 1.5vw);
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
 h3 {
@@ -13,4 +13,9 @@ h3 {
   justify-self: center;
   text-align: center;
   margin-left: 0px;
+  margin-bottom: 6vh;
+}
+
+.policy {
+  overflow-y: scroll;
 }
