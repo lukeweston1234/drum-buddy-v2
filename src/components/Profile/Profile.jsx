@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Navigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { AuthContext } from "../../contexts/AuthContext";
 import { SequenceItem } from "./SequenceItem";
 import axios from "axios";
 import "../../styles/Profile.css";
 
 const Profile = () => {
+  const { isAuth } = useContext(AuthContext);
   const { isLoading, isError, data, error } = useQuery(
     ["sequences"],
     getSequencesRefactor
@@ -23,6 +26,10 @@ const Profile = () => {
         </div>
       </div>
     );
+  }
+
+  if (!isAuth) {
+    return <Navigate to="/Home" />;
   }
 
   if (isError) {
