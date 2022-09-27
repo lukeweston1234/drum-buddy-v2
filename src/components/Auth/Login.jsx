@@ -14,7 +14,7 @@ const Login = () => {
       const results = await axios.post(URL, credentialResponse);
       console.log(results);
       if (results.status === 200 || results.status === 201) {
-        localStorage.setItem("userToken", credentialResponse.credential);
+        localStorage.setItem("userToken", credentialResponse);
         localStorage.setItem("userID", results.data.user_id);
         setIsAuth(true);
       } else {
@@ -36,6 +36,7 @@ const Login = () => {
         <GoogleLogin
           className="google-login"
           onSuccess={(credentialResponse) => {
+            console.log(credentialResponse);
             handleToken(credentialResponse);
           }}
           onError={() => {
@@ -53,7 +54,7 @@ const Login = () => {
   }
   return (
     <div className="google-login">
-      <span>Login With Google</span>
+      <span>Sign-in With Google</span>
       <GoogleLogin
         onSuccess={(credentialResponse) => {
           handleToken(credentialResponse);

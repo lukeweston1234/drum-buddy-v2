@@ -7,6 +7,16 @@ h3 {
   font-size: calc(16px + 1vw);
 }
 
+.error-message {
+  margin: 0px;
+  text-align: center;
+  align-items: center;
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
 .delete-image {
   border: none;
   align-self: center;

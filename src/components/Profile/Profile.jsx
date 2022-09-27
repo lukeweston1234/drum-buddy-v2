@@ -33,7 +33,7 @@ const Profile = () => {
   }
 
   if (isError) {
-    return <span>Error: {error.message}</span>;
+    return <span className="error-message">Could not connect to server.</span>;
   }
 
   return (
