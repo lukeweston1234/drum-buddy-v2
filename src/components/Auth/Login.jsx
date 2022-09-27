@@ -60,6 +60,7 @@ const Login = () => {
         }}
         onError={() => {
           console.log("Login Failed");
+          setLoginFailed(true);
         }}
         shape={"rectangular"}
         size={"large"}
