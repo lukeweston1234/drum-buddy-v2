@@ -8,6 +8,7 @@ import { Login } from "./components/Auth/Login";
 import { Logout } from "./components/Auth/Logout";
 import { Sequence } from "./components/Sequence";
 import { AuthContext } from "./contexts/AuthContext";
+import { Privacy } from "./components/Privacy";
 
 function App() {
   const { isAuth } = useContext(AuthContext);
@@ -75,7 +76,11 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
+        <Link className="privacy-link" to="/Privacy">
+          Privacy Policy
+        </Link>
       </div>
     </QueryClientProvider>
   );

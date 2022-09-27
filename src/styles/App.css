@@ -101,3 +101,13 @@ a:visited {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.privacy-link {
+  grid-row-start: 9;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  text-decoration: none;
+  color: #767676;
+  font-size: 1.75vh;
+  white-space: nowrap;
+}
