@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { SequenceItem } from "./SequenceItem";
 import axios from "axios";
-import "../styles/Profile.css";
+import "../../styles/Profile.css";
 
 const Profile = () => {
   const { isLoading, isError, data, error } = useQuery(
@@ -11,7 +11,18 @@ const Profile = () => {
   );
 
   if (isLoading) {
-    return <span>Loading...</span>;
+    return (
+      <div className="loading-wrapper">
+        <div className="animation-wrapper">
+          <div className="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (isError) {
@@ -37,13 +48,17 @@ const Profile = () => {
 };
 
 const getSequencesRefactor = async () => {
-  const userID = localStorage.getItem("userID");
-  const URL = `${
-    process.env.REACT_APP_API_URL + "/api/sequences/users/" + userID + "/"
-  }`;
-  const results = await axios.get(URL);
-  console.log(results);
-  return results;
+  try {
+    const userID = localStorage.getItem("userID");
+    const URL = `${
+      process.env.REACT_APP_API_URL + "/api/sequences/users/" + userID + "/"
+    }`;
+    const results = await axios.get(URL);
+    console.log(results);
+    return results;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export { Profile };

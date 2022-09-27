@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Link, Route, Routes, useLocation, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Home } from "./components/Home";
-import { Profile } from "./components/Profile";
+import { Profile } from "./components/Profile/Profile";
 import { Login } from "./components/Auth/Login";
 import { Logout } from "./components/Auth/Logout";
 import { Sequence } from "./components/Sequence";
