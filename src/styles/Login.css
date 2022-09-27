@@ -1,0 +1,13 @@
+span {
+  font-size: calc(20px + 1vw);
+  margin-bottom: 6vh;
+}
+.google-login {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

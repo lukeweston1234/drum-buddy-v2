@@ -3,6 +3,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { Navigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import axios from "axios";
+import "../../styles/Login.css";
 
 const Login = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
@@ -31,7 +32,7 @@ const Login = () => {
   if (loginFailed) {
     return (
       <div className="google-login">
-        <h3>Login Failed</h3>
+        <span>Login Failed</span>
         <GoogleLogin
           className="google-login"
           onSuccess={(credentialResponse) => {
@@ -52,6 +53,7 @@ const Login = () => {
   }
   return (
     <div className="google-login">
+      <span>Login With Google</span>
       <GoogleLogin
         onSuccess={(credentialResponse) => {
           handleToken(credentialResponse);
