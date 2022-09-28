@@ -14,7 +14,7 @@ const Login = () => {
       const results = await axios.post(URL, credentialResponse);
       console.log(results);
       if (results.status === 200 || results.status === 201) {
-        localStorage.setItem("userToken", credentialResponse);
+        localStorage.setItem("userToken", credentialResponse.credential);
         localStorage.setItem("userID", results.data.user_id);
         setIsAuth(true);
       } else {

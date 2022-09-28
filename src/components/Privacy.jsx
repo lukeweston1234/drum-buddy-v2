@@ -4,7 +4,7 @@ import "../styles/Privacy.css";
 const Privacy = () => {
   return (
     <div className="privacy-container">
-      <h3>Privacy Policy</h3>
+      <h3 className="privacy-header">Privacy Policy</h3>
       <text className="policy">
         Drumbuddy.io uses tracking cookies and tokens in order to provide a
         consistent experience for our users. We use the Google 0Auth2 API, which

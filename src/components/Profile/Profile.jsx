@@ -46,7 +46,8 @@ const Profile = () => {
         {data.data.map((sequence, index) => {
           return (
             <>
-              <SequenceItem sequence={sequence} key={index} /> <hr />
+              <SequenceItem sequence={sequence} key={sequence.sequence_id} />{" "}
+              <hr />
             </>
           );
         })}
