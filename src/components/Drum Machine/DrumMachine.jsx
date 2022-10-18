@@ -23,6 +23,7 @@ const DrumMachine = ({ parentDrumArray }) => {
   const [tom] = useAudio("tom.mp3");
   const [stick] = useAudio("stick.mp3");
   const [glitch] = useAudio("glitch.mp3");
+  //TODO refactor drumArray into a useRef object, useState is causing rerender affecting the timing of the drum machine
   const [drumArray, setDrumArray] = useState(() => {
     console.log(parentDrumArray);
     if (parentDrumArray) {
